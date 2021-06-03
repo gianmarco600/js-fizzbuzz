@@ -1,16 +1,16 @@
 
 // sto cercando di semplificare, intanto pusho il bonus
 
-for (var i = 0; i <= 100; i++){
+for (var i = 1; i <= 100; i++){
     var str ='<li>' + i;
-    if ( i % 2 == 0 && i % 3 == 0 && i != 0){
+    if ( i % 2 == 0 && i % 3 == 0){
         str +='Boolean';
     }
-    if ( i % 3 == 0 && i != 0){
-        str +='fizz';
+    if ( i % 3 == 0){
+        str +='Fizz';
     }
-    if ( i % 5 == 0 && i != 0){
-        str +='buzz';
+    if ( i % 5 == 0){
+        str +='Buzz';
     }
     str += '</li>'
     document.getElementById('list').innerHTML += str;
